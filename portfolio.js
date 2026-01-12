@@ -128,12 +128,57 @@ let currentPage = 'home';
             this.reset();
         
 
-        // Add fade in animation
-        const fadeStyle = document.createElement('style');
-        fadeStyle.textContent = `
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
-                to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-            }
-        `;
-        document.head.appendChild(fadeStyle);
+        
+
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function (e) {
+       e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("/", {
+        method: "POST",
+        body: formData
+    })
+    .then(() => {
+        showSuccessPopup();
+        form.reset();
+    })
+    .catch(() => alert("Form submission failed"));
+});
+
+function showSuccessPopup() {
+    const popup = document.createElement("div");
+    popup.innerHTML = "Message sent successfully!";
+
+    popup.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(46, 204, 113, 0.95);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        font-size: 18px;
+        z-index: 9999;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,.4);
+        animation: fadeIn .3s ease;
+    `;
+
+    document.body.appendChild(popup);
+
+    setTimeout(() => popup.remove(), 3000);
+}
+
+
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes fadeIn {
+    from { opacity:0; transform:translate(-50%,-50%) scale(.8); }
+    to { opacity:1; transform:translate(-50%,-50%) scale(1); }
+}`;
+document.head.appendChild(style);

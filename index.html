@@ -448,8 +448,10 @@
                 <section class="contact-grid">
                     <div class="contact-form glass">
                         <h2>Get In Touch</h2>
-                        <form name="contact" method="POST" data-netlify="true">
-                           <input type="hidden" name="form-name" value="contact">
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactForm">
+                            <input type="hidden" name="form-name" value="contact">
+                             <input type="hidden" name="bot-field">
+
 
                             <div class="form-group">
                                 <label for="name">Full Name</label>
