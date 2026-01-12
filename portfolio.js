@@ -101,6 +101,9 @@ let currentPage = 'home';
         `;
         document.head.appendChild(style);
 
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
             
             // Create success message
             const successMsg = document.createElement('div');
@@ -117,68 +120,25 @@ let currentPage = 'home';
                 z-index: 10000;
                 animation: fadeIn 0.3s ease;
             `;
+            successMsg.textContent = 'Message sent successfully!';
             
+            document.body.appendChild(successMsg);
             
-            // Remove message after 5 seconds
+            // Remove message after 3 seconds
             setTimeout(() => {
                 successMsg.remove();
-            }, 5000);
+            }, 3000);
             
             // Reset form
             this.reset();
-        
+        });
 
-        
-
-
-        const form = document.getElementById("contactForm");
-
-        form.addEventListener("submit", function (e) {
-       e.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch("/", {
-        method: "POST",
-        body: formData
-    })
-    .then(() => {
-        showSuccessPopup();
-        form.reset();
-    })
-    .catch(() => alert("Form submission failed"));
-});
-
-function showSuccessPopup() {
-    const popup = document.createElement("div");
-    popup.innerHTML = "Message sent successfully!";
-
-    popup.style.cssText = `
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(46, 204, 113, 0.95);
-        color: white;
-        padding: 20px 40px;
-        border-radius: 10px;
-        font-size: 18px;
-        z-index: 9999;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 10px 30px rgba(0,0,0,.4);
-        animation: fadeIn .3s ease;
-    `;
-
-    document.body.appendChild(popup);
-
-    setTimeout(() => popup.remove(), 3000);
-}
-
-
-const style = document.createElement("style");
-style.innerHTML = `
-@keyframes fadeIn {
-    from { opacity:0; transform:translate(-50%,-50%) scale(.8); }
-    to { opacity:1; transform:translate(-50%,-50%) scale(1); }
-}`;
-document.head.appendChild(style);
+        // Add fade in animation
+        const fadeStyle = document.createElement('style');
+        fadeStyle.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+                to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            }
+        `;
+        document.head.appendChild(fadeStyle);
