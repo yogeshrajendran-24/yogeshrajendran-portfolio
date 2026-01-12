@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh Rajendran - Portfolio</title>
+    <link rel="icon" href="images/devops.png">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid of circles with varying sizes -->
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <!-- Small accent dots -->
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <!-- Tiny corner dots -->
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span>Yogesh Rajendran</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('skills')">Skills</a>
+                    <a href="#" onclick="showPage('projects')">Projects</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/Yogesh.png" alt="Modern Technology Interaction" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Hi I'm Yogesh Rajendran</h1>
+                        <p>Aspiring DevOps Engineer (Fresher) with hands-on experience in CI/CD pipelines, Docker, Kubernetes, and AWS, passionate about automation, reliability, and continuous improvement.</p>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button">View CV</a>
+                    </div>
+                </section>
+
+                <!-- <section class="features">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h3>Modern Design</h3>
+                        <p>Beautiful glass morphism effects with backdrop blur and translucent elements that create depth and visual hierarchy.</p>
+                    </div>
+                    
+                    <div class="feature-card glass">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized animations and effects that maintain smooth 60fps performance across all modern browsers and devices.</p>
+                    </div>
+                    
+                    <div class="feature-card glass">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Fully responsive design that adapts beautifully to any screen size, from mobile phones to desktop displays.</p>
+                    </div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Interactive UI</h3>
+                        <p>Engaging hover effects, smooth transitions, and micro-animations that create delightful user experiences.</p>
+                    </div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure & Safe</h3>
+                        <p>Built with modern security standards and best practices to ensure your data and user privacy are protected.</p>
+                    </div>
+
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Easy Integration</h3>
+                        <p>Simple to implement and customize for any project with clean, well-documented code and flexible components.</p>
+                    </div>
+                </section> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>About Me</h2>
+                        <p>I am an aspiring DevOps Engineer with practical exposure to CI/CD pipelines, cloud computing, containerization, and automation tools. I enjoy working with Linux-based systems and building automated deployment workflows that improve efficiency and reliability.</p>
+                        <p>I have hands-on experience using tools such as Git, Docker, Jenkins, Kubernetes, and AWS EC2 through self-based projects and continuous learning. I am passionate about DevOps culture, continuous integration, monitoring, and cloud-native technologies, and I am actively pursuing opportunities to grow as a DevOps professional.</p>
+                    </div></div>
+                </section>
+
+
+                <div class="container">
+            <div class="content-wrapper">
+                <section class="education-content">
+                    <div class="education-text glass">
+                        <h2>Education</h2>
+                        <div class="degree">
+                        <p><strong>🎓 </strong> B. Tech ( Information Technology ) | CGPA - 7.98 | 2019 - 2023 | University College Of Engineering (BIT Campus) - Anna University, Tiruchirappalli </p>
+                        <p><strong>🏫 </strong> HSC | GPA - 80.5 | 2018 - 2019 | Arunodhaya Higher Secondary School, Pattukkottai </p></div>
+                    </div></div>
+                </section>
+
+
+                <section class="certifications">
+                    <h2>Certifications</h2>
+                    <div class="team-grid">
+                        <div class="team-member glass">
+                            <div class="team-avatar">🚀</div>
+                            <h3>Devops Certification</h3>
+                            <p class="role">Error Makes Clever Academy</p>
+                            <p class="bio">“Certified DevOps Engineer with practical training in CI/CD pipelines, Docker, Kubernetes, Linux, and cloud deployment."</p>
+                                <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">🔁</div>
+                            <h3>Introduction to Devops</h3>
+                            <p class="role">Great Learnings</p>
+                            <p class="bio">“Completed a certified Introduction to DevOps course covering CI/CD, automation, and modern DevOps practices.”</p>
+                            <a href="assests/Intro to Devops.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">🤖</div>
+                            <h3>Prompt Engineer</h3>
+                            <p class="role">Error Makes Clever Academy</p>
+                            <p class="bio">“Certified Prompt Engineer with hands-on training in crafting effective prompts for AI and LLM-based systems.”</p>
+                            <a href="assests/Prompt Engineer.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">👩‍💻</div>
+                            <h3>Emma Wilson</h3>
+                            <p class="role">Senior Developer</p>
+                            <p class="bio">Frontend specialist with expertise in React and modern JavaScript frameworks.</p>
+                            <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">👨‍🎨</div>
+                            <h3>David Kim</h3>
+                            <p class="role">UX Designer</p>
+                            <p class="bio">User experience expert focused on creating intuitive and accessible digital products.</p>
+                            <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+
+                        <div class="team-member glass">
+                            <div class="team-avatar">👩‍💼</div>
+                            <h3>Lisa Martinez</h3>
+                            <p class="role">Project Manager</p>
+                            <p class="bio">Certified PMP with a track record of delivering complex projects on time and budget.</p>
+                            <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button">View Certificate</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS PAGE -->
+    <div id="skills" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>My Skills</h1>
+                    <p>“Where code meets cloud and automation.”</p>
+                </section>
+
+
+    <section class="myskills">                    
+                    <div class="skills-grid">
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🐧</div>
+                            <h3>Linux</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🐙</div>
+                            <h3>Git & Github</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">☁️</div>
+                            <h3>AWS</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🌐</div>
+                            <h3>Networking Basics</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🧰</div>
+                            <h3>Jenkins</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">☸️</div>
+                            <h3>Kubernetes</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🐳</div>
+                            <h3>Docker</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🚨</div>
+                            <h3>Prometheus</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">📈</div>
+                            <h3>Grafana</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">💻</div>
+                            <h3>HTML</h3>
+                        </div>
+
+                        <div class="skill-set glass1">
+                            <div class="skill-avatar">🎨</div>
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                </section>
+
+
+
+        <!--
+                <section class="services-grid">
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🐧</div>
+                            <h3>Linux</h3>
+                        </div>
+                        <p>Create stunning user interfaces with modern design principles, focusing on usability and aesthetic appeal.</p>
+                        <ul class="service-features">
+                            <li>User Research & Analysis</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Visual Design & Branding</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">💻</div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <p>Build fast, secure, and scalable websites using the latest web technologies and best practices.</p>
+                        <ul class="service-features">
+                            <li>Frontend Development</li>
+                            <li>Backend Integration</li>
+                            <li>Performance Optimization</li>
+                            <li>SEO Implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">📱</div>
+                            <h3>Mobile Apps</h3>
+                        </div>
+                        <p>Develop native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                        <ul class="service-features">
+                            <li>iOS & Android Development</li>
+                            <li>Cross-platform Solutions</li>
+                            <li>App Store Optimization</li>
+                            <li>Maintenance & Updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🚀</div>
+                            <h3>Digital Strategy</h3>
+                        </div>
+                        <p>Strategic consulting to help your business thrive in the digital landscape with data-driven insights.</p>
+                        <ul class="service-features">
+                            <li>Digital Transformation</li>
+                            <li>Analytics & Reporting</li>
+                            <li>Growth Strategy</li>
+                            <li>Technology Consulting</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">☁️</div>
+                            <h3>Cloud Solutions</h3>
+                        </div>
+                        <p>Modernize your infrastructure with scalable cloud services and seamless migration strategies.</p>
+                        <ul class="service-features">
+                            <li>Cloud Migration</li>
+                            <li>DevOps & Automation</li>
+                            <li>Infrastructure as Code</li>
+                            <li>24/7 Monitoring</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🔐</div>
+                            <h3>Cybersecurity</h3>
+                        </div>
+                        <p>Protect your digital assets with comprehensive security solutions and threat protection.</p>
+                        <ul class="service-features">
+                            <li>Security Auditing</li>
+                            <li>Penetration Testing</li>
+                            <li>Data Protection</li>
+                            <li>Compliance Management</li>
+                        </ul>
+                    </div>
+                </section> -->
+            </div>
+        </div>
+    </div>
+
+
+        <!-- PROJECTS PAGE -->
+    <div id="projects" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>My Projects</h1>
+                    <p>“Building, deploying, and improving software — continuously.”</p>
+                </section>
+
+                <section class="projects-grid">
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
+                            <h3>CI/CD Pipeline with Docker & GitHub Actions</h3>
+                        </div>
+                        <p>Designed and implemented an automated CI/CD pipeline using GitHub Actions to build, test, and deploy applications efficiently.</p>
+                         <a href="https://github.com/yogeshrajendran-24/devops-ci-cd-demo" target="_blank" class="cta-button1">View Project</a>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
+                            <h3>Kubernetes Deployment with Monitoring</h3>
+                        </div>
+                        <p>Deployed and managed containerized applications on Kubernetes with integrated monitoring to simulate production-like environments.</p>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Project</a>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
+                            <h3>Kubernetes Deployment with Monitoring</h3>
+                        </div>
+                        <p>Deployed and managed containerized applications on Kubernetes with integrated monitoring to simulate production-like environments.</p>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Project</a>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">🛒</div>
+                            <h3>E-Commerce Website with Docker & GitHub Actions on AWS</h3>
+                        </div>
+                        <p>Built a Dockerized e-commerce website with GitHub and GitHub Actions for automated builds and image publishing. Deployed the application on AWS EC2 using Docker.</p>
+                        <a href="https://github.com/yogeshrajendran-24/techstore/tree/main" target="_blank" class="cta-button1">View Project</a><br>
+                        <a href="http://75.101.171.173/" target="_blank" class="cta-button1">View Live Web</a>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">☁️</div>
+                            <h3>Kubernetes Deployment with Monitoring</h3>
+                        </div>
+                        <p>Deployed and managed containerized applications on Kubernetes with integrated monitoring to simulate production-like environments.</p>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Project</a><br>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Live Web</a>
+                    </div>
+
+                    <div class="project-card glass">
+                        <div class="project-header">
+                            <div class="project-icon">☁️</div>
+                            <h3>Kubernetes Deployment with Monitoring</h3>
+                        </div>
+                        <p>Deployed and managed containerized applications on Kubernetes with integrated monitoring to simulate production-like environments.</p>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Project</a> <br>
+                        <a href="assests/YOGESH RAJENDRAN-CV.pdf" target="_blank" class="cta-button1">View Live Web</a>
+                    </div>
+
+                    <!-- <div class="service-card glass">
+                        <div class="service-header">
+                            <div class="service-icon">🔐</div>
+                            <h3>Cybersecurity</h3>
+                        </div>
+                        <p>Protect your digital assets with comprehensive security solutions and threat protection.</p>
+                        <ul class="service-features">
+                            <li>Security Auditing</li>
+                            <li>Penetration Testing</li>
+                            <li>Data Protection</li>
+                            <li>Compliance Management</li>
+                        </ul>
+                    </div> -->
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Get In Touch</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Type the message..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <a href="mailto:yogeshrajendran2410@gmail.com" title="yogeshrajendran2410@gmail.com"><p>yogeshrajendran2410@gmail.com</p></a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+918925208088"><p>+91 8925208088</p></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>Chennai, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🔗</div>
+                            <div class="contact-item-text">
+                                <h4>Linkedin</h4>
+                                <a href="https://www.linkedin.com/in/yogesh-rajendran-37b2a4240/" target="_blank"> Yogesh Rajendran </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🐙</div>
+                            <div class="contact-item-text">
+                                <h4>Github</h4>
+                                <a href="https://github.com/yogeshrajendran-24" target="_blank"> Yogeshrajendran-24 </a>
+                            </div>
+                        </div>
+                </section>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" onclick="showPage('about')">About Me</a>
+                        <a href="#" onclick="showPage('skills')">Skills</a>
+                        <a href="#" onclick="showPage('projects')">Projects</a>
+                        <a href="#" onclick="showPage('contact')">Contact</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2026 Yogesh Rajendran. All rights reserved. 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="portfolio.js"></script>
+</body>
+</html>
