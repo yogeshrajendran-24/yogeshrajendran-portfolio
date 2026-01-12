@@ -117,7 +117,7 @@ let currentPage = 'home';
                 z-index: 10000;
                 animation: fadeIn 0.3s ease;
             `;
-            successMsg.textContent = 'Message sent successfully!';
+            
             
             document.body.appendChild(successMsg);
             
