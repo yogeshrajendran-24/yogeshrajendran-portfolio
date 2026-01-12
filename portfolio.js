@@ -101,9 +101,6 @@ let currentPage = 'home';
         `;
         document.head.appendChild(style);
 
-        // Form submission handling
-        // document.querySelector('form').addEventListener('submit', function(e) {
-           // e.preventDefault(); 
             
             // Create success message
             const successMsg = document.createElement('div');
@@ -131,7 +128,7 @@ let currentPage = 'home';
             
             // Reset form
             this.reset();
-        });
+        
 
         // Add fade in animation
         const fadeStyle = document.createElement('style');
