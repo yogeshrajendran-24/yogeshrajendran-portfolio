@@ -119,8 +119,6 @@ let currentPage = 'home';
             `;
             
             
-            document.body.appendChild(successMsg);
-            
             // Remove message after 5 seconds
             setTimeout(() => {
                 successMsg.remove();
