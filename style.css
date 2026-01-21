@@ -994,16 +994,4 @@ button[type="submit"] {
 
 }
 
-@media (max-width: 768px) {
-  .about-content,
-  .education-content {
-    margin-bottom: 20px;
-    gap: 30px;
-  }
-
-  .certifications {
-    margin-top: 20px;
-  }
-}
-
 }
