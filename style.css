@@ -148,6 +148,46 @@ nav {
     align-items: center;
     padding: 30px 45px;
 }
+
+.quote {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.quote p{
+    
+    display: flex;
+    justify-content: center; 
+    color: aliceblue;
+    font-size: 18px;
+    font-family: cursive;
+    padding: 20px 45px;
+    font-style: italic;
+    letter-spacing: 3px;
+    
+}
+
+.quote p{
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideIn 1s ease forwards;
+  
+}
+
+@keyframes slideIn{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .logo {
     font-size: 32px;
     font-weight: bold;
@@ -218,6 +258,44 @@ nav {
     padding: 60px 40px;
     margin-bottom: 40px;
 }
+
+.hero1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+}
+
+.hero1 h1 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+}
+.hero1 p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero1 p{
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideIn 1s ease forwards;
+  
+}
+
+@keyframes slideIn{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
