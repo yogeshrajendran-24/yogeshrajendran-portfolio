@@ -800,10 +800,18 @@ button[type="submit"] {
         text-align: center;
         gap: 20px;
     }
+    .hero1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
     .hero-content {
         text-align: center;
     }
     .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero1 h1 {
         font-size: 2.5rem;
     }
     nav {
